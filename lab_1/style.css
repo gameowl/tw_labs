@@ -37,6 +37,7 @@ body{
     opacity: 0.9;
     border-radius: 20px;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 
 .box4{
@@ -72,12 +73,22 @@ body{
 }
 
 .nav a:hover {
+    position: relative;
     background-color: #FFE61B;
+    border-radius: 30px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
     color: white;
 }
 
 .nav a.active{
+    position: relative;
     background-color: #4E9F3D;
+    border-radius: 30px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px;
     color: black;
 }
 
@@ -173,4 +184,35 @@ img{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+.but2{
+    margin-top: 10px;
+}
+
+.but3{
+    margin-top: 0;
+}
+
+#top-scroll {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 15px 12px 15px 12px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+#top-scroll:hover{
+    background-color: #26580f;
+}
+
+html{
+    scroll-behavior: smooth;
 }
